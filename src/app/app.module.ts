@@ -9,8 +9,7 @@ import { LoopbackComponent } from './chat-box.loop-back.component';
   declarations: [
     AppComponent,
     MessageRoomComponent,
-    ChatBoxComponent,
-    LoopbackComponent
+    ChatBoxComponent
   ],
   imports:      [
     BrowserModule
