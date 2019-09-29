@@ -11,6 +11,10 @@ export class ChatBoxComponent
   protected messages:Array<string> = [];
 
   public sendMessage(message:string):void {
+    if(message === undefined || message === null || this.messages === null || this.messages === undefined){
+        return;
+    }
+    this.messages.push(message);
   }
 
 }
