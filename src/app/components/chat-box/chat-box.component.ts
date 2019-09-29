@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 export class ChatBoxComponent
 {
   protected message:string;
+  public sendMessage:void;
+  protected messages:Array<string> = [];
 }
+
+
