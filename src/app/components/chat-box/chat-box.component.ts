@@ -10,8 +10,7 @@ export class ChatBoxComponent
   protected message:string;
   protected messages:Array<string> = [];
 
-  public sendMessage(message) {
-    return message;
+  public sendMessage(message:string):void {
   }
 
 }
