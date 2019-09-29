@@ -1,9 +1,13 @@
-<div *ngFor="let message of messages">{{this.message}}</div>
+<div *ngFor="let message of messages"><span style="color:blue">{{this.message}}</span></div>
+<div *ngFor="let message2 of messages2"><span style="color:green">{{this.message2}}</span></div>
 
 <input [(ngModel)]="message">
 <p>{{message}}</p>
-
 <button (click)=sendMessage(message)>Send</button>
 
+<br>
+<br>
 
-
+<input [(ngModel)]="message2">
+<p>{{message2}}</p>
+<button (click)=sendMessage2(message2)>Send</button>
