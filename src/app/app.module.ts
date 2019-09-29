@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MessageRoomComponent } from './views/message-room/message-room.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
+import { LoopbackComponent } from './chat-box.loop-back.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessageRoomComponent,
-    ChatBoxComponent
+    ChatBoxComponent,
+    LoopbackComponent
   ],
   imports:      [
     BrowserModule
