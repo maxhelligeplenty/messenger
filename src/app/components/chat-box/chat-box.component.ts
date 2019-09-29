@@ -12,7 +12,7 @@ export class ChatBoxComponent
 
   public sendMessage(message:string):void
   {
-    if(message === undefined || message === null)
+    if(message === undefined || message === null || this.messages === null || this.messages === undefined)
     {
       return;
     }
