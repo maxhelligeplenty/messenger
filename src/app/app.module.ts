@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MessageRoomComponent } from './views/message-room/message-room.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
-import { LoopbackComponent } from './chat-box.loop-back.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,8 +11,9 @@ import { LoopbackComponent } from './chat-box.loop-back.component';
     MessageRoomComponent,
     ChatBoxComponent
   ],
-  imports:      [
-    BrowserModule
+  imports: [
+    BrowserModule,
+    FormsModule
   ],
   providers:    [],
   bootstrap:    [AppComponent]
