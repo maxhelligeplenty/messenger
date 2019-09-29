@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 export class ChatBoxComponent
 {
   protected message:string;
+  protected messages:Array<string> = [];
+
+  public sendMessage(message:string):void
+  {
+    if(message === undefined || message === null)
+    {
+      return;
+    }
+    this.messages.push(message);
+  }
 }

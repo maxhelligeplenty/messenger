@@ -1,2 +1,6 @@
+<div *ngFor="let msg of messages">
+  {{msg}}
+</div>
+
 <input [(ngModel)]="message">
-<p>{{message}}</p>
+<button (click)="sendMessage(message)">Senden</button>
