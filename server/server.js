@@ -5,12 +5,13 @@ const express = require('express');
 const socketIO = require('socket.io');
 const path = require('path');
 const http_1 = require("http");
-
 const app = express();
+
 app.use(express.static(__dirname + '/dist/sync-watch-application'));
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname + '/dist/sync-watch-application/index.html'));
 });
+
 const server = http_1.createServer(app);
 const io = socketIO(server);
 server.listen(process.env.PORT || 8080);
